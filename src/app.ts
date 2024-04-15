@@ -1,6 +1,7 @@
 import express from 'express'
 import { envs } from './config';
-import { GihubController } from './presentation/github/controller';
+import { GithubController } from './presentation/github/controller';
+
 
 
 
@@ -12,7 +13,7 @@ import { GihubController } from './presentation/github/controller';
 
 function main() {
   const app = express();
-  const controller = new GihubController();
+  const controller = new GithubController();
 
   app.use(express.json())
 
